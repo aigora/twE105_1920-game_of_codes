@@ -1,11 +1,15 @@
-# Título del trabajo
+# Game_of_codes
 
-Descripción breve del proyecto a realizar (2-3 frases).
+Con este trabajo pretendemos crear una sala de recreativos virtual donde el usuario escogera el juego con el que desee recrearse.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Sebastian Fonseca Pradera, @sfonseca2019.
+Hugo Franco Sanz, @hfranco47.
+Candela Estevez Romero, @cbestevez 
+Ruben Ruiz Martinez, @xrubenruizx
 
 ## Objetivos del trabajo
 
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+El programa muestra un menú principal con diferentes opciones.
+Le pide al usuario que seleccione una de ellas y al finalizar vuelve al menú principal, pudiendo finalizar el programa.
