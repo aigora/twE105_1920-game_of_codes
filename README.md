@@ -4,7 +4,7 @@ Con este trabajo pretendemos crear una sala de recreativos virtual donde el usua
 
 ## Integrantes del equipo
 
-Sebastian Fonseca Pradera, @sfonseca2019.\n
+Sebastian Fonseca Pradera, @sfonseca2019.\
 Hugo Franco Sanz, @hfranco47.\n
 Candela Estevez Romero, @cbestevez. 
 Ruben Ruiz Martinez, @xrubenruizx.
