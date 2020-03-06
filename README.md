@@ -7,7 +7,7 @@ Con este trabajo pretendemos crear una sala de recreativos virtual donde el usua
 Sebastian Fonseca Pradera, @sfonseca2019.\
 Hugo Franco Sanz, @hfranco47.\
 Candela Estevez Romero, @cbestevez.\
-Ruben Ruiz Martinez, @xrubenruizx.\
+Ruben Ruiz Martinez, @xrubenruizx.
 
 ## Objetivos del trabajo
 
