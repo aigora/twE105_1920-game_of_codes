@@ -14,7 +14,7 @@ void loop (char c[3][3])
 	do{
 	printf ("Escoge una opcion (introduce el numero 1 o 2):\
 		    \n 1) Jugar contra la maquina.\
-			\n 2) Jugar con un amigo (o contra ti mismo si no tienes amigos).\
+			\n 2) Jugar con un amigo.\
 			\n 3) Salir del juego.\n");
 	scanf ("%i", &a);
 	system ("cls");
@@ -312,7 +312,7 @@ void jugador2 (char c[3][3])
 	c[i][j]='O';
 }
 
-void maquina (char c[3][3]) //el ordenador marcar· casillas de forma aleatoria
+void maquina (char c[3][3]) //el ordenador marcar√° casillas de forma aleatoria
 {
 	int i,j,k;
 	char aux;
