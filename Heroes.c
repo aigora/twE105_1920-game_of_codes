@@ -62,7 +62,8 @@ void heroesVSvillano ()
     	aleatorio = rand()%2; // Si sale 0 pierdes, si sale 1 ganas
     	if (aleatorio==0)
     	{
-    		printf ("\nTurno del villano:\n");
+		printf ("\nLo siento, la magia del mago ha fallado.\n");
+    	    printf ("Turno del villano:\n");
             pegar = maquina.fuerza;
             printf ("Te han herido %i puntos\n", pegar);
             usuario.salud -= pegar;
@@ -72,7 +73,8 @@ void heroesVSvillano ()
 		else if (aleatorio==1)
 		{
 			magia = usuario.magia;
-  	    	printf ("\nHas herido a tu enemigo %i puntos\n", magia);
+		printf ("\nLa magia ha funcionado.\n");
+  	    printf ("Has herido a tu enemigo %i puntos\n", magia);
             maquina.salud -= magia;
             printf ("La salud del villano es: %i puntos\n", maquina.salud);
             printf ("\nENHORABUENA !!! HAS GANADO.\n\n");
