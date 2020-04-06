@@ -18,15 +18,15 @@ int main ()
 		
 		switch (a)
 		{
-			case 1:
+			case 1://funcion referida al juego de tres en raya
 				system("cls");
 				loop(c);
 			break;
 			
-			case 2:
+			case 2://funcion referida al juego de adivina el numero
 			break;
 			
-			case 3:
+			case 3://funcion referida al juego de heroes
 			break;
 			
 			case 4:
