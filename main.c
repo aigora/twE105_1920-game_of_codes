@@ -10,9 +10,9 @@ int main ()
 		printf ("MENU PRINCIPAL\
 		        \n Seleccione una opcion (1-5):\
 		        \n 1) Tres en raya.\
-				\n 2) \
-				\n 3) \
-				\n 4) \
+			\n 2) Adivina el numero.\
+			\n 3) Heroes.\
+			\n 4) Proximos juegos. \
 				\n 5) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
