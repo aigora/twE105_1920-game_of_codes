@@ -19,7 +19,6 @@ int main ()
 		switch (a)
 		{
 			case 1:
-				system("cls");
 				loop(c);
 			break;
 			
