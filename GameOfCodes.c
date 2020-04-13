@@ -17,7 +17,6 @@ void loop (char c[3][3])
 			\n 2) Jugar con un amigo.\
 			\n 3) Salir del juego.\n");
 	scanf ("%i", &a);
-	system ("cls");
 	} while (a!=1 && a!=2 && a!=3);
 	
 	switch (a)
@@ -25,7 +24,6 @@ void loop (char c[3][3])
 		case 1:
 			i=0;
 	        do{
-	        	system ("cls");
 	        	tablero (c);
 		
 	    	    if (i % 2 == 0) {
@@ -41,7 +39,6 @@ void loop (char c[3][3])
 	    	
         	} while (i<=8 && j==2);
 	
-        	system ("cls");
 	        tablero (c);
 	
 	        if (j==0)
@@ -61,7 +58,6 @@ void loop (char c[3][3])
 		case 2:
 			i=0;
 	        do{
-	            system ("cls");
 		        tablero (c);
 		
 		        if (i % 2 == 0) {
@@ -77,7 +73,6 @@ void loop (char c[3][3])
 		
            	} while (i<=8 && j==2);
 	
-	        system ("cls");
 	        tablero (c);
 	
 	        if (j==0)
