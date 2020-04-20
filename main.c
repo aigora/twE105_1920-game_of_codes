@@ -5,7 +5,7 @@
 int main ()
 {
 	int a;
-	char repet; //variable que evalua cuando se va a repetir el programa, tras haber jugado previamente
+	int repet; //variable que evalua cuando se va a repetir el programa, tras haber jugado previamente
 	char c[3][3];
 	char nombre[20];
 	
@@ -40,10 +40,27 @@ int main ()
 			break;
 		}
 		printf("Genial!! Has terminado el juego, espero que te hayas divertido.\n Quieres jugar a otro juego?\t Pulsa '1'\n Prefieres salir del juego?\t Pulsa '0'");
-		do
+		do //segun la opcion que escoja el jugador, el programa se repite o no
 		{
-			
+			scanf(" %i", &repet);
+			switch(repet)
+			{
+				case 1: //si se escoge esta opcion(1), se repite la posibilidad de escoger juego
+					printf("Estupendo, a que juego prefieres jugar ahora?\n");
+					printf("1) Tres en raya\n2) Adivina el numero\n3) Heroes\n4) (el juego que pongamos aqui)\n");
+					a!=5;
+				break;
+				case 2://si se escoge esta opcion(0), se finaliza el programa
+					printf("Espero que te hayas divertido, hasta pronto\n");
+					exit(-1); //permite salir del programa
+				break;
+				default:
+					printf("No te he entendido, repite la opcion por favor\n");
+					repet=6;
+				break;
+					
+			}
 		}
-		while();
+		while(repet=6);
 	} while (a!=5);
 }
