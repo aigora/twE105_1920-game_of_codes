@@ -5,7 +5,7 @@
 int main ()
 {
 	int a;
-	char repet; //variable que evalua cuando se va a repetir el programa 
+	char repet; //variable que evalua cuando se va a repetir el programa, tras haber jugado previamente
 	char c[3][3];
 	char nombre[20];
 	
@@ -38,11 +38,12 @@ int main ()
 			case 4:
 				// función referida al juego 4
 			break;
+		}
+		printf("Genial!! Has terminado el juego, espero que te hayas divertido.\n Quieres jugar a otro juego?\t Pulsa '1'\n Prefieres salir del juego?\t Pulsa '0'");
+		do
+		{
 			
-			default:
-				printf("Tu eleccion no es valida, vuelve a escoger por favor.\n");
-				repet=1;
-			break;
-		}	
+		}
+		while();
 	} while (a!=5);
 }
