@@ -12,6 +12,7 @@ int main ()
 	presentacion();
 	
 	do{
+		system("cls");	
 		printf ("\nMENU PRINCIPAL\
 		        \n Seleccione una opcion (1-5):\
 		        \n 1) Tres en raya.\
@@ -54,7 +55,6 @@ int main ()
 				case 1: //si se escoge esta opcion(1), se repite la posibilidad de escoger juego
 					system("cls");
 					printf("Estupendo, a que juego prefieres jugar ahora?\n");
-					printf("1) Tres en raya.\n2) Adivina el numero.\n3) Heroes.\n4)...\n5) Salir del programa.\n");
 					a!=5;
 					repet!=6;
 				break;
@@ -70,6 +70,6 @@ int main ()
 					repet=6;
 				break;	
 			}
-		}while(repet=6);
+		}while(repet==6);
 	} while (a!=5);
 }

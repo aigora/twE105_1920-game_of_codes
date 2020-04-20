@@ -62,3 +62,27 @@ Sexo del usuario: j
 ADIVINA EL NUMERO
 Los numeros escogidos por el usuario son: 5.00, 4.00, 1.00, 7.00 y 8.00
 El numero escogido aleatoriamente ha sido el 5.00
+Nombre del usuario: j
+Apellidos del usuario: j
+Edad del usuario: 4209120
+Sexo del usuario: j
+Nombre del usuario: c
+Apellidos del usuario: e
+Edad del usuario: 19
+Sexo del usuario: f
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 2.00, 3.00, 4.00, 5.00 y 6.00
+El numero escogido aleatoriamente ha sido el 4.00
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 2.00, 3.00, 4.00, 4.00 y 5.00
+El numero escogido aleatoriamente ha sido el 2.00
+Nombre del usuario: j
+Apellidos del usuario: j
+Edad del usuario: 10
+Sexo del usuario: l
+Nombre del usuario: j
+Apellidos del usuario: j
+Edad del usuario: 8
+Sexo del usuario: k

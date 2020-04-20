@@ -485,6 +485,7 @@ int ganador (char c[3][3])
 //ADIVINA EL NÚMERO
 void adivina()
 {
+	system("cls");
     FILE *pf;
 	int n=0, i=0;
 	float n1, n2, n3, n4, n5, numero, tecleado;
