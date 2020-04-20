@@ -1,0 +1,64 @@
+Nombre del usuario: candela
+Apellidos del usuario: estevez
+Edad del usuario: 19
+Sexo del usuario: femenino
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 9.00, 0.00, 8.00, 5.00 y 8.00
+El numero escogido aleatoriamente ha sido el 9.00
+Nombre del usuario: c
+Apellidos del usuario: e
+Edad del usuario: 4209056
+Sexo del usuario: f
+Nombre del usuario: d
+Apellidos del usuario: d
+Edad del usuario: 4209056
+Sexo del usuario: d
+Nombre del usuario: c
+Apellidos del usuario: h
+Edad del usuario: 9
+Sexo del usuario: h
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 1.00, 2.00, 3.00, 4.00 y 5.00
+El numero escogido aleatoriamente ha sido el 5.00
+Nombre del usuario: g
+Apellidos del usuario: g
+Edad del usuario: 8
+Sexo del usuario: g
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 1.00, 2.00, 3.00, 4.00 y 8.00
+El numero escogido aleatoriamente ha sido el 8.00
+Nombre del usuario: o
+Apellidos del usuario: o
+Edad del usuario: 0
+Sexo del usuario: h
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 1.00, 4.00, 5.00, 7.00 y 8.00
+El numero escogido aleatoriamente ha sido el 4.00
+Nombre del usuario: j
+Apellidos del usuario: j
+Edad del usuario: 9
+Sexo del usuario: j
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 4.00, 5.00, 7.00, 8.00 y 1.00
+El numero escogido aleatoriamente ha sido el 8.00
+Nombre del usuario: e
+Apellidos del usuario: r
+Edad del usuario: 6
+Sexo del usuario: f
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 4.00, 5.00, 6.00, 7.00 y 8.00
+El numero escogido aleatoriamente ha sido el 6.00
+Nombre del usuario: h
+Apellidos del usuario: h
+Edad del usuario: 8
+Sexo del usuario: j
+
+ADIVINA EL NUMERO
+Los numeros escogidos por el usuario son: 5.00, 4.00, 1.00, 7.00 y 8.00
+El numero escogido aleatoriamente ha sido el 5.00
