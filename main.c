@@ -16,7 +16,7 @@ int main ()
 		        \n 1) Tres en raya.\
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
-				\n 4) Preguntados.\ 
+				\n 4) Preguntados.
 			        //Preguntados: juego de responder preguntas de cultura generl sobre diversos temas.
 			        // Seguramente añadiremos más juegos
 				\n 5) Salir del programa.\n ");
