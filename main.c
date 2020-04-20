@@ -5,6 +5,7 @@
 int main ()
 {
 	int a;
+	char repet; //variable que evalua cuando se va a repetir el programa 
 	char c[3][3];
 	char nombre[20];
 	
@@ -16,9 +17,8 @@ int main ()
 		        \n 1) Tres en raya.\
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
-				\n 4) Preguntados.\
-				\n 5) Salir del programa.\n "); //Preguntados: juego de responder preguntas de cultura generl sobre diversos temas.
-			                                        // Seguramente añadiremos más juegos
+				\n 4) \
+				\n 5) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
 		switch (a)
@@ -36,7 +36,12 @@ int main ()
 			break;
 			
 			case 4:
-				// función referida al juego 4
+				// funci�n referida al juego 4
+			break;
+			
+			default:
+				printf("Tu eleccion no es valida, vuelve a escoger por favor.\n");
+				repet=1;
 			break;
 		}	
 	} while (a!=5);
