@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "GameOfCodes.h"
 #include <time.h>
-#define intentos 2 //Número de intentos para adivina el número
+#define intentos 2 //NÃºmero de intentos para adivina el nÃºmero
 
-//PRESENTACIÓN
+//PRESENTACIÃ“N
 void presentacion()
 {
 	FILE *u;
@@ -341,7 +341,7 @@ void jugador2 (char c[3][3])
 	c[i][j]='O';
 }
 
-void maquina (char c[3][3]) //el ordenador marcará casillas de forma aleatoria
+void maquina (char c[3][3]) //el ordenador marcarÃ¡ casillas de forma aleatoria
 {
 	int i,j,k;
 	char aux;
@@ -482,10 +482,9 @@ int ganador (char c[3][3])
     return 2;
 }
 
-//ADIVINA EL NÚMERO
+//ADIVINA EL NÃšMERO
 void adivina()
 {
-	system("cls");
     FILE *pf;
 	int n=0, i=0;
 	float n1, n2, n3, n4, n5, numero, tecleado;
