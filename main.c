@@ -43,7 +43,7 @@ int main ()
 				sleep(1);
 				exit(-1);
 		}
-		sleep(5);
+		sleep(3);
 		printf("Genial!! Has terminado el juego, espero que te hayas divertido.\n Quieres jugar a otro juego?\t Pulsa '1'\n Prefieres salir del juego?\t Pulsa '0'\n");
 		do //segun la opcion que escoja el jugador, el programa se repite o no
 		{
@@ -60,8 +60,8 @@ int main ()
 					exit(-1); //permite salir del programa
 				break;
 				default:
-					printf("No te he entendido, repite la opcion por favor: repetir(1) o salir(0)\n");
-					a!=5;
+					printf("No te he entendido, repite la opcion por favor: ");
+					//a=5;
 					repet=6;
 				break;	
 			}
