@@ -61,7 +61,7 @@ int main ()
 				break;
 				default:
 					printf("No te he entendido, repite la opcion por favor: repetir(1) o salir(0)\n");
-					a=5;
+					a!=5;
 					repet=6;
 				break;	
 			}
