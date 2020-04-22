@@ -36,7 +36,7 @@ int main ()
 			break;
 			
 			case 4:
-				// función referida al juego 4
+				// funcion referida al juego 4
 			break;
 			case 5:
 				printf("Has escogido salir del juego, hasta pronto");

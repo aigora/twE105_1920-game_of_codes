@@ -482,7 +482,7 @@ int ganador (char c[3][3])
     return 2;
 }
 
-//ADIVINA EL NÚMERO
+//ADIVINA EL NUMERO
 void adivina()
 {
     FILE *pf;
@@ -507,7 +507,7 @@ void adivina()
 	do{
 		i++;
 		do{
-		printf ("\nEscribe un numero:\n");
+		printf ("\nEscribe un numero de los que has introducido antes:\n");
 		scanf ("%f", &tecleado);
 		} while (tecleado != n1 && tecleado != n2 && tecleado != n3 && tecleado != n4 && tecleado != n5);
 		
