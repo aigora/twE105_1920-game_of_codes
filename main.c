@@ -18,7 +18,7 @@ int main ()
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
 				\n 4) \
-				\n 5) Salir del programa.\n ");
+				\n otro) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
 		switch (a)
@@ -38,7 +38,7 @@ int main ()
 			case 4:
 				// funcion referida al juego 4
 			break;
-			case 5:
+			default:
 				printf("Has escogido salir del juego, hasta pronto");
 				sleep(1);
 				exit(-1);
