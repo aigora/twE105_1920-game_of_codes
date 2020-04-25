@@ -10,10 +10,10 @@ void ciencia_q3(); //Muestra la tercera pregunta
 void ciencia_q4(); //Muestra la cuarta pregunta
 void ciencia_q5(); //Muestra la quinta pregunta
 void ciencia_q6(); //Muestra la sexta pregunta
-void ciencia_q7(); //Muestra la séptima pregunta
+void ciencia_q7(); //Muestra la sÃ©ptima pregunta
 void ciencia_q8(); //Muestra la octava pregunta
 void ciencia_q9(); //Muestra la novena pregunta
-void ciencia_q10(); //Muestra la décima pregunta
+void ciencia_q10(); //Muestra la dÃ©cima pregunta
 //Geografia
 void P_Geografia();
 void geografia_q1(); //Muestra la primera pregunta
@@ -22,11 +22,11 @@ void geografia_q3(); //Muestra la tercera pregunta
 void geografia_q4(); //Muestra la cuarta pregunta
 void geografia_q5(); //Muestra la quinta pregunta
 void geografia_q6(); //Muestra la sexta pregunta
-void geografia_q7(); //Muestra la séptima pregunta
+void geografia_q7(); //Muestra la sÃ©ptima pregunta
 void geografia_q8(); //Muestra la octava pregunta
 void geografia_q9(); //Muestra la novena pregunta
-void geografia_q10(); //Muestra la décima pregunta
-
+void geografia_q10(); //Muestra la dÃ©cima pregunta
+//Deporte
 void P_Deporte();
 void deporte_q1(); //Muestra la primera pregunta
 void deporte_q2(); //Muestra la segunda pregunta
@@ -34,10 +34,10 @@ void deporte_q3(); //Muestra la tercera pregunta
 void deporte_q4(); //Muestra la cuarta pregunta
 void deporte_q5(); //Muestra la quinta pregunta
 void deporte_q6(); //Muestra la sexta pregunta
-void deporte_q7(); //Muestra la séptima pregunta
+void deporte_q7(); //Muestra la sÃ©ptima pregunta
 void deporte_q8(); //Muestra la octava pregunta
 void deporte_q9(); //Muestra la novena pregunta
-void deporte_q10(); //Muestra la décima pregunta
+void deporte_q10(); //Muestra la dÃ©cima pregunta
 
 
 
