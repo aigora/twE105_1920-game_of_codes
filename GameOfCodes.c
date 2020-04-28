@@ -1,36 +1,59 @@
 #include <stdio.h>
 #include "GameOfCodes.h"
 #include <time.h>
+#include <stdlib.h>
+#define Max_Usuarios 4 //Maximo numero de usuarios que pueden registrarse
 #define intentos 2 //Número de intentos para adivina el número
 
 //PRESENTACIÓN
 void presentacion()
 {
 	FILE *u;
-	datos usuario;
+	datos aux[Max_Usuarios];
+	datos *usuario[Max_Usuarios];
+	int i, Num_Usuarios;
 	u = fopen ("Usuario.txt", "a");
 	if (u==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
 	printf("Muy buenas !!! Soy el encargado de la gran sala de recreativos GAME OF CODES.\
 	       \nMi nombre es Stark. Antes de empezar, necesito que introduzca algunos datos personales.\n");
-	printf ("Introduzca su nombre:\n");
-	scanf ("%s", usuario.nombre);
-	fprintf (u,"Nombre del usuario: %s\n",usuario.nombre);
-	printf ("Introduzca sus apellidos:\n");
-	scanf (" %[^\n]", usuario.apellidos);
-	fprintf (u,"Apellidos del usuario: %s\n",usuario.apellidos);
-	printf ("Introduzca su edad:\n");
-	scanf ("%d", &usuario.edad);
-	fprintf (u,"Edad del usuario: %d\n",usuario.edad);
-	printf ("Introduzca su sexo:\n");
-	scanf ("%s", usuario.sexo);
-	fprintf (u,"Sexo del usuario: %s\n",usuario.sexo);
-	fclose(u);
 	
-	printf ("Muy bien %s %s!. Tienes ganas de divertirte? Porque ya estamos listos para empezar.\
-	        \nEn el siguiente menu puedes seleccionar con que quieres divertirte.\n", usuario.nombre, usuario.apellidos);
+	for (i=0; i<Max_Usuarios; i++)
+	usuario[i] = aux + i;
 	
+	printf ("Cuantas personas vais a jugar?\n");
+	scanf ("%i", &Num_Usuarios);
+	
+	for (i=0; i<Num_Usuarios; i++)
+	{
+		printf ("Introduzca el nombre del usuario %i:  ", i+1);
+		fflush(stdout);
+		scanf ("%s", usuario[i]->nombre);
+		fprintf (u, "Nombre del usuario %i: %s\n", i+1, usuario[i]->nombre);
+		
+		printf ("Introduzca los apeliidos del usuario %i:  ", i+1);
+		fflush(stdout);
+		scanf (" %[^\n]", usuario[i]->apellidos);
+		fprintf (u, "Apellidos del usuario %i: %s\n", i+1, usuario[i]->apellidos);
+		
+		printf ("Introduzca la edad del usuario %i:  ", i+1);
+		fflush(stdout);
+		scanf ("%d", &usuario[i]->edad);
+		fprintf (u, "Edad del usuario %i: %d\n", i+1, usuario[i]->edad);
+		
+		printf ("Introduzca el sexo del usuario %i:  ", i+1);
+		fflush(stdout);
+		scanf ("%s", usuario[i]->sexo);
+		fprintf (u, "Sexo del usuario %i: %s\n", i+1, usuario[i]->sexo);
+		printf("\n");
+	}
+	
+	printf ("Muy bien! Vuestro/s usuario/s es/son:\n");
+	for (i=0; i<Num_Usuarios; i++)
+	printf ("%s %s\n", usuario[i]->nombre, usuario[i]->apellidos);
+	printf ("Parece que ya estamos listos.\
+	        \nEn el siguiente menu puedes/podeis seleccionar con que divertirte/divertiros.\n");
 }
 
 //TRES EN RAYA
