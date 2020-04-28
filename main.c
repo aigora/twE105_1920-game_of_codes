@@ -18,7 +18,7 @@ int main ()
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
 				\n 4) \
-				\n otro) Salir del programa.\n ");
+				\n Otro) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
 		switch (a)
