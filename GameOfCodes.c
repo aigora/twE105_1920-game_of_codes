@@ -166,116 +166,38 @@ void Intro_Primera (char c[3][3])
 
 void jugador1 (char c[3][3])
 {
-	int i,j,k;
-	char aux;
+	char jug1;
+        char signo = 'X';
 	
 	do{
-		do{
-			printf ("Turno del jugador 1: ");
-			scanf (" %c", &aux);
-		} while (aux<'1' || aux>'9');
+		printf ("Turno del jugador 1: ");
+	        fflush(stdin);
+		scanf ("%c", &jug1);
+	}while (jug1<'1' || jug1>'9');
 		
-		k=0;
-		switch (aux)
-		{
-			case '1':
-				i=0;
-				j=0;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '2':
-				i=0;
-				j=1;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '3':
-				i=0;
-				j=2;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '4':
-				i=1;
-				j=0;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '5':
-				i=1;
-				j=1;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '6':
-				i=1;
-				j=2;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '7':
-				i=2;
-				j=0;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '8':
-				i=2;
-				j=1;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-				
-			case '9':
-				i=2;
-				j=2;
-				if (c[i][j]=='X'||c[i][j]=='O'){
-					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
-				}
-				break;
-		}
-	} while (k==1);
-	
-	c[i][j]='X';
+	casilla_ocupada(c,jug1,signo);
 }
 
 void jugador2 (char c[3][3])
 {
-	int i,j,k;
-	char aux;
+	char jug2;
+	char signo = 'O';
 	
 	do{
-		do{
-			printf ("Turno del jugador 2: ");
-			scanf (" %c", &aux);
-		} while (aux<'1' || aux>'9');
-		
-		k=0;
+		printf ("Turno del jugador 2: ");
+		fflush(stdin);
+		scanf("%c", &jug2);
+	}while (jug2<'1' || jug2>'9');
+	
+	casilla_ocupada(c,jug2,signo);
+}
+
+void casilla_ocupada (char c[3][3], char aux, char signo)
+{
+	int i,j,k;
+	
+	do{
+	  k=0;
 		switch (aux)
 		{
 			case '1':
@@ -361,7 +283,7 @@ void jugador2 (char c[3][3])
 		}
 	} while (k==1);
 	
-	c[i][j]='O';
+	c[i][j] = signo;
 }
 
 void maquina (char c[3][3]) //el ordenador marcará casillas de forma aleatoria
