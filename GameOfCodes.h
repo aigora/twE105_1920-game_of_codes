@@ -1,4 +1,4 @@
-//PRESENTACIÓN
+//PRESENTACIÃ“N
 typedef struct{
 	char nombre[10];
 	char apellidos[20];
@@ -14,6 +14,7 @@ void Intro_Primera (char c[3][3]);
 void tablero (char c[3][3]);
 void jugador1 (char c[3][3]);
 void jugador2 (char c[3][3]);
+void casilla_ocupada (char c[3][3], char aux, char signo);
 void maquina (char c[3][3]);
 int ganador (char c[3][3]);
 
