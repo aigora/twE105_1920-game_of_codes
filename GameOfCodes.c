@@ -205,7 +205,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=0;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -214,7 +216,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=1;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -223,7 +227,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=2;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -232,7 +238,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=0;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -241,7 +249,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=1;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -250,7 +260,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=2;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -259,7 +271,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=0;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -268,7 +282,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=1;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 				
@@ -277,7 +293,9 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 				j=2;
 				if (c[i][j]=='X'||c[i][j]=='O'){
 					k=1;
-					printf ("La casilla esta ocupada, intentalo con otro numero.\n\n");
+					printf ("La casilla esta ocupada, intentalo con otro numero: ");
+					fflush(stdin);
+					scanf ("%c", &aux);
 				}
 				break;
 		}
