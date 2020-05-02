@@ -7,7 +7,6 @@ int main ()
 	int a;
 	int repet; //variable que evalua cuando se va a repetir el programa, tras haber jugado previamente
 	char c[3][3];
-	char nombre[20];
 	
 	presentacion();
 	
