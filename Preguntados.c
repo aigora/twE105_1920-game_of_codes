@@ -839,7 +839,7 @@ void deporte_q1()
 {
 	char pregunta1;
 	FILE *q1;
-	q1 = fopen ("Preguntados/P_Deporte/q1.txt", "r");
+	q1 = fopen ("Preguntados/P_Deportes/q1.txt", "r");
 	if (q1==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -853,7 +853,7 @@ void deporte_q2()
 {
 	char pregunta2;
 	FILE *q2;
-	q2 = fopen ("Preguntados/P_Deporte/q2.txt", "r");
+	q2 = fopen ("Preguntados/P_Deportes/q2.txt", "r");
 	if (q2==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -867,7 +867,7 @@ void deporte_q3()
 {
 	char pregunta3;
 	FILE *q3;
-	q3 = fopen ("Preguntados/P_Deporte/q3.txt", "r");
+	q3 = fopen ("Preguntados/P_Deportes/q3.txt", "r");
 	if (q3==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -881,7 +881,7 @@ void deporte_q4()
 {
 	char pregunta4;
 	FILE *q4;
-	q4 = fopen ("Preguntados/P_Deporte/q4.txt", "r");
+	q4 = fopen ("Preguntados/P_Deportes/q4.txt", "r");
 	if (q4==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -895,7 +895,7 @@ void deporte_q5()
 {
 	char pregunta5;
 	FILE *q5;
-	q5 = fopen ("Preguntados/P_Deporte/q5.txt", "r");
+	q5 = fopen ("Preguntados/P_Deportes/q5.txt", "r");
 	if (q5==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -909,7 +909,7 @@ void deporte_q6()
 {
 	char pregunta6;
 	FILE *q6;
-	q6 = fopen ("Preguntados/P_Deporte/q6.txt", "r");
+	q6 = fopen ("Preguntados/P_Deportes/q6.txt", "r");
 	if (q6==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -923,7 +923,7 @@ void deporte_q7()
 {
 	char pregunta7;
 	FILE *q7;
-	q7 = fopen ("Preguntados/P_Deporte/q7.txt", "r");
+	q7 = fopen ("Preguntados/P_Deportes/q7.txt", "r");
 	if (q7==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -937,7 +937,7 @@ void deporte_q8()
 {
 	char pregunta8;
 	FILE *q8;
-	q8 = fopen ("Preguntados/P_Deporte/q8.txt", "r");
+	q8 = fopen ("Preguntados/P_Deportes/q8.txt", "r");
 	if (q8==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -951,7 +951,7 @@ void deporte_q9()
 {
 	char pregunta9;
 	FILE *q9;
-	q9 = fopen ("Preguntados/P_Deporte/q9.txt", "r");
+	q9 = fopen ("Preguntados/P_Deportes/q9.txt", "r");
 	if (q9==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
@@ -965,7 +965,7 @@ void deporte_q10()
 {
 	char pregunta10;
 	FILE *q10;
-	q10 = fopen ("Preguntados/P_Deporte/q10.txt", "r");
+	q10 = fopen ("Preguntados/P_Deportes/q10.txt", "r");
 	if (q10==NULL){
 		printf ("No se ha podido abrir el archivo.\n");
 	}
