@@ -12,11 +12,11 @@ int main ()
 	
 	do{
 		printf ("\nMENU PRINCIPAL\
-		        \n Seleccione una opcion (1-5):\
+		        \n Seleccione una opcion:\
 		        \n 1) Tres en raya.\
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
-				\n 4) \
+				\n 4) Preguntados.\
 				\n Otro) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
@@ -35,10 +35,10 @@ int main ()
 			break;
 			
 			case 4:
-				// funcion referida al juego 4
+				Preguntados();
 			break;
 			default:
-				printf("Has escogido salir del juego, hasta pronto");
+				printf("Has escogido salir del juego. Hasta pronto !!!");
 				sleep(1);
 				exit(-1);
 		}
