@@ -10,7 +10,7 @@ void ciencia_q3(); //Muestra la tercera pregunta
 void ciencia_q4(); //Muestra la cuarta pregunta
 void ciencia_q5(); //Muestra la quinta pregunta
 void ciencia_q6(); //Muestra la sexta pregunta
-void ciencia_q7(); //Muestra la séptima pregunta
+void ciencia_q7(); //Muestra la septima pregunta
 void ciencia_q8(); //Muestra la octava pregunta
 void ciencia_q9(); //Muestra la novena pregunta
 void ciencia_q10(); //Muestra la décima pregunta
