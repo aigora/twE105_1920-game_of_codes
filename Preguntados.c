@@ -38,7 +38,18 @@ void deporte_q7(); //Muestra la septima pregunta
 void deporte_q8(); //Muestra la octava pregunta
 void deporte_q9(); //Muestra la novena pregunta
 void deporte_q10(); //Muestra la decima pregunta
-
+//Historia
+void P_Historia();
+void historia_q1(); //Muestra la primera pregunta
+void historia_q2(); //Muestra la segunda pregunta
+void historia_q3(); //Muestra la tercera pregunta
+void historia_q4(); //Muestra la cuarta pregunta
+void historia_q5(); //Muestra la quinta pregunta
+void historia_q6(); //Muestra la sexta pregunta
+void historia_q7(); //Muestra la septima pregunta
+void historia_q8(); //Muestra la octava pregunta
+void historia_q9(); //Muestra la novena pregunta
+void historia_q10(); //Muestra la decima pregunta
 
 
 int main ()
@@ -59,7 +70,7 @@ void Preguntados()
 	
 	do{	
 	    srand(time(NULL));
-	    t = rand()%3;
+	    t = rand()%4;
 	
     	if (t==0)
     	P_Ciencia();
@@ -67,8 +78,11 @@ void Preguntados()
 		else if(t==1)
 		P_Deporte();	
 	
-    	else
+    	else if(t==2)
     	P_Geografia();
+    	
+    	else
+    	P_Historia();
     	
     	printf ("Parece que ya has terminado.\
 		        \nTe gustaria volver a jugar (S/N)? Recuerda que te puede tocar un tema diferente.\n");
@@ -974,3 +988,308 @@ void deporte_q10()
 	printf("\n");
 	fclose(q10);
 }
+
+
+//Historia
+
+void P_Historia()
+{
+	int respuesta;
+	char s;
+	
+	do{
+	printf ("Tema escogido: HISTORIA\n");
+	historia_q1();
+	scanf ("%i", &respuesta);
+	printf("\n");
+	
+	if (respuesta == 1)
+	{
+		printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+		historia_q2();
+		scanf ("%i", &respuesta);
+		printf("\n");
+		
+		if (respuesta == 3)
+		{
+			printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+			historia_q3();
+			scanf ("%i", &respuesta);
+			printf("\n");
+			
+			if (respuesta == 1)
+			{
+				printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+				historia_q4();
+				scanf ("%i", &respuesta);
+				printf("\n");
+				
+				if (respuesta == 3)
+				{
+					printf ("CORRECTA !!! Pasas a la siguiente.\n");
+					historia_q5();
+					scanf ("%i", &respuesta);
+					printf("\n");
+					
+					if (respuesta == 2)
+					{
+						printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+						historia_q6();
+						scanf ("%i", &respuesta);
+						printf("\n");
+						
+						if (respuesta == 3)
+						{
+							printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+							historia_q7();
+							scanf ("%i", &respuesta);
+							printf("\n");
+							
+							if (respuesta == 1)
+							{
+								printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+								historia_q8();
+								scanf ("%i", &respuesta);
+								printf("\n");
+								
+								if (respuesta == 2)
+								{
+									printf ("CORRECTO !!! Pasas a la siguiente pregunta.\n");
+									historia_q9();
+									scanf ("%i", &respuesta);
+									printf("\n");
+									
+									if (respuesta == 1)
+									{
+										printf ("CORRECTO !!! Pasas a la ultima pregunta.\n");
+										historia_q10();
+										scanf ("%i", &respuesta);
+										printf("\n");
+										
+										if (respuesta == 2)
+										printf ("ENHORABUENA !!! HAS PASADO EL TEST DE HISTORIA\n");
+										
+										else
+                                     	{
+                             	        	printf ("Lo siento, la respuesta es incorrecta.\n");
+                            	        	printf ("Quieres volver a intentarlo? (S/N)\n");
+                             	        	scanf (" %c", &s);
+                                      	}
+									}
+									
+									else
+                                 	{
+        	                        	printf ("Lo siento, la respuesta es incorrecta.\n");
+        	                        	printf ("Quieres volver a intentarlo? (S/N)\n");
+          	                         	scanf (" %c", &s);
+                                	}
+								}
+								
+								else
+                            	{
+        	                    	printf ("Lo siento, la respuesta es incorrecta.\n");
+        	                      	printf ("Quieres volver a intentarlo? (S/N)\n");
+          	                    	scanf (" %c", &s);
+                            	}
+							}
+							
+							else
+                        	{
+        	                	printf ("Lo siento, la respuesta es incorrecta.\n");
+        	                	printf ("Quieres volver a intentarlo? (S/N)\n");
+                	        	scanf (" %c", &s);
+                        	}
+						}
+						
+						else
+                      	{
+        	            	printf ("Lo siento, la respuesta es incorrecta.\n");
+        	             	printf ("Quieres volver a intentarlo? (S/N)\n");
+          	            	scanf (" %c", &s);
+                    	}
+					}
+					
+	  				else
+                	{
+        	        	printf ("Lo siento, la respuesta es incorrecta.\n");
+        	        	printf ("Quieres volver a intentarlo? (S/N)\n");
+          	        	scanf (" %c", &s);
+                	}
+				}
+				
+				else
+            	{
+        	    	printf ("Lo siento, la respuesta es incorrecta.\n");
+             		printf ("Quieres volver a intentarlo? (S/N)\n");
+                	scanf (" %c", &s);
+             	}
+			}
+			
+			else
+        	{
+        		printf ("Lo siento, la respuesta es incorrecta.\n");
+        		printf ("Quieres volver a intentarlo? (S/N)\n");
+          		scanf (" %c", &s);
+         	}
+		}
+		
+		else
+    	{
+    		printf ("Lo siento, la respuesta es incorrecta.\n");
+    		printf ("Quieres volver a intentarlo? (S/N)\n");
+    		scanf (" %c", &s);
+    	}
+	}
+	
+	else
+	{
+		printf ("Lo siento, la respuesta es incorrecta.\n");
+		printf ("Quieres volver a intentarlo? (S/N)\n");
+		scanf (" %c", &s);
+	}
+	} while (s=='s' || s=='S');
+}
+
+void historia_q1()
+{
+	char pregunta1;
+	FILE *q1;
+	q1 = fopen ("Preguntados/P_Historia/q1.txt", "r");
+	if (q1==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q1, "%c", &pregunta1) != EOF)
+	printf ("%c", pregunta1);
+	printf ("\n");
+	fclose(q1);
+}
+
+void historia_q2()
+{
+	char pregunta2;
+	FILE *q2;
+	q2 = fopen ("Preguntados/P_Historia/q2.txt", "r");
+	if (q2==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q2, "%c", &pregunta2) != EOF)
+	printf ("%c", pregunta2);
+	printf ("\n");
+	fclose(q2);
+}
+
+void historia_q3()
+{
+	char pregunta3;
+	FILE *q3;
+	q3 = fopen ("Preguntados/P_Historia/q3.txt", "r");
+	if (q3==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q3, "%c", &pregunta3) != EOF)
+	printf ("%c", pregunta3);
+	printf ("\n");
+	fclose(q3);
+}
+
+void historia_q4()
+{
+	char pregunta4;
+	FILE *q4;
+	q4 = fopen ("Preguntados/P_Historia/q4.txt", "r");
+	if (q4==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q4, "%c", &pregunta4) != EOF)
+	printf ("%c", pregunta4);
+	printf ("\n");
+	fclose(q4);
+}
+
+void historia_q5()
+{
+	char pregunta5;
+	FILE *q5;
+	q5 = fopen ("Preguntados/P_Historia/q5.txt", "r");
+	if (q5==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q5, "%c", &pregunta5) != EOF)
+	printf ("%c", pregunta5);
+	printf ("\n");
+	fclose(q5);
+}
+
+void historia_q6()
+{
+	char pregunta6;
+	FILE *q6;
+	q6 = fopen ("Preguntados/P_Historia/q6.txt", "r");
+	if (q6==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q6, "%c", &pregunta6) != EOF)
+	printf ("%c", pregunta6);
+	printf ("\n");
+	fclose(q6);
+}
+
+void historia_q7()
+{
+	char pregunta7;
+	FILE *q7;
+	q7 = fopen ("Preguntados/P_Historia/q7.txt", "r");
+	if (q7==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q7, "%c", &pregunta7) != EOF)
+	printf ("%c", pregunta7);
+	printf ("\n");
+	fclose(q7);
+}
+
+void historia_q8()
+{
+	char pregunta8;
+	FILE *q8;
+	q8 = fopen ("Preguntados/P_Historia/q8.txt", "r");
+	if (q8==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q8, "%c", &pregunta8) != EOF)
+	printf ("%c", pregunta8);
+	printf ("\n");
+	fclose(q8);
+}
+
+void historia_q9()
+{
+	char pregunta9;
+	FILE *q9;
+	q9 = fopen ("Preguntados/P_Historia/q9.txt", "r");
+	if (q9==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q9, "%c", &pregunta9) != EOF)
+	printf ("%c", pregunta9);
+	printf ("\n");
+	fclose(q9);
+}
+
+void historia_q10()
+{
+	char pregunta10;
+	FILE *q10;
+	q10 = fopen ("Preguntados/P_Historia/q10.txt", "r");
+	if (q10==NULL){
+		printf ("No se ha podido abrir el archivo.\n");
+	}
+	while (fscanf (q10, "%c", &pregunta10) != EOF)
+	printf ("%c", pregunta10);
+	printf ("\n");
+	fclose(q10);
+}
+
+
+
+
