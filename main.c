@@ -37,6 +37,7 @@ int main ()
 			case 4:
 				Preguntados();
 			break;
+				
 			default:
 				printf("Has escogido salir del juego. Hasta pronto !!!");
 				sleep(1);
