@@ -59,7 +59,7 @@ void presentacion()
 //TRES EN RAYA
 void loop (char c[3][3])
 {
-	int i,j,a;
+	int i,j,a,jug;
 	
 	do{
 	Intro_Primera(c);
@@ -83,7 +83,7 @@ void loop (char c[3][3])
 	        	tablero (c);
 		
 	    	    if (i % 2 == 0) {
-			    jug=1
+			    jug=1;
 		    	    jugador (c,jug);
 	    	    }
 		
