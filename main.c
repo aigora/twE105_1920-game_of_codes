@@ -56,7 +56,7 @@ int main ()
 					repet!=6;
 				break;
 				case 0://si se escoge esta opcion(0), se finaliza el programa
-					printf("Espero que te hayas divertido, hasta pronto\n");
+					printf("Espero que te hayas divertido. Hasta pronto !!!\n");
 					exit(-1); //permite salir del programa
 				break;
 				default:
