@@ -83,7 +83,8 @@ void loop (char c[3][3])
 	        	tablero (c);
 		
 	    	    if (i % 2 == 0) {
-		    	    jugador1 (c);
+			    jug=1
+		    	    jugador (c,jug);
 	    	    }
 		
 		        else {
@@ -118,11 +119,13 @@ void loop (char c[3][3])
 		        tablero (c);
 		
 		        if (i % 2 == 0) {
-		        	jugador1 (c);
+				jug=1;
+		        	jugador (c,jug);
 		        }
 		
 		        else {
-		        	jugador2 (c);
+				jug=2;
+		        	jugador (c,jug);
 		        }
 		
 	           	j = ganador (c);
@@ -164,32 +167,24 @@ void Intro_Primera (char c[3][3])
 	}
 }
 
-void jugador1 (char c[3][3])
+void jugador (char c[3][3], int jug)
 {
-	char jug1;
-        char signo = 'X';
+	int i;
+	char signo, casilla;
 	
-	do{
-		printf ("Turno del jugador 1: ");
-	        fflush(stdin);
-		scanf ("%c", &jug1);
-	}while (jug1<'1' || jug1>'9');
+	if (jug==1)
+	signo = 'X';
+	
+	else
+        signo = 'O';
 		
-	casilla_ocupada(c,jug1,signo);
-}
-
-void jugador2 (char c[3][3])
-{
-	char jug2;
-	char signo = 'O';
-	
 	do{
-		printf ("Turno del jugador 2: ");
-		fflush(stdin);
-		scanf("%c", &jug2);
-	}while (jug2<'1' || jug2>'9');
-	
-	casilla_ocupada(c,jug2,signo);
+		printf ("Turno del jugador %i: ",jug);
+	        fflush(stdin);
+		scanf ("%c", &casilla);
+	}while (casilla<'1' || casilla>'9');
+		
+	casilla_ocupada(c,casilla,signo);
 }
 
 void casilla_ocupada (char c[3][3], char aux, char signo)
