@@ -3,9 +3,9 @@
 #include <time.h>
 #include <stdlib.h>
 #define Max_Usuarios 4 //Maximo numero de usuarios que pueden registrarse
-#define intentos 2 //Número de intentos para adivina el número
+#define intentos 2 //Numero de intentos para adivina el numero
 
-//PRESENTACIÓN
+//PRESENTACION
 void presentacion()
 {
 	FILE *u;

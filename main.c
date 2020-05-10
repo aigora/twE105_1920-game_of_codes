@@ -17,6 +17,7 @@ int main ()
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
 				\n 4) Preguntados.\
+				\n 5) Ahorcado.\
 				\n Otro) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
@@ -36,6 +37,9 @@ int main ()
 			
 			case 4:
 				Preguntados();
+				break;
+			case 5:
+				printf("Juego ahorcado\n"); //Ahorcado(); Juego del ahorcado por implementar
 			break;
 				
 			default:
@@ -52,7 +56,7 @@ int main ()
 			{
 				case 1: //si se escoge esta opcion(1), se repite la posibilidad de escoger juego
 					printf("Estupendo, a que juego prefieres jugar ahora?\n");
-					a!=5;
+					a!=7;
 					repet!=6;
 				break;
 				case 0://si se escoge esta opcion(0), se finaliza el programa
@@ -66,5 +70,5 @@ int main ()
 				break;	
 			}
 		}while(repet==6);
-	} while (a!=5);
+	} while (a!=7);
 }
