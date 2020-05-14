@@ -89,5 +89,5 @@ void historia_q10(); //Muestra la decima pregunta
 
 //BUSCAMINAS
 void buscaminas();
-void modoFacil(); //presenta tablero de 8x8 y 4 minas
-void modoDificil(); //presentatablero de 10x10 y 6 minas
+void modoFacil(); //presenta tablero de 6x6 y 6 minas
+void modoDificil(); //presentatablero de 9x9 y 9 minas
