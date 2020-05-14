@@ -1853,7 +1853,7 @@ void buscaminas()
 	printf("Tu objetivo es recorrer el tablero entero sin encontrar ninguna mina\n");
 	printf("Buena suerte!!");
 	printf("Selecciona un modo de juego:\n");
-	printf("(F)Facil\n(D)Dificil\n(E)Extremo");
+	printf("(F)Facil\n(D)Dificil\n");
 	scanf(" %c", &e);
 	switch(e) //segun la eleccion del jugador, el modo es facil, dificil o extremo
 	{
@@ -1865,11 +1865,6 @@ void buscaminas()
 		case 'D':
 		case 'd':
 			modoDificil();
-		break;
-		
-		case 'E':
-		case 'e':
-			modoExtremo();
 		break;
 	}
 }
