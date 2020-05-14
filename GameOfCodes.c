@@ -1895,7 +1895,7 @@ void modoFacil()
 					printf("\n");
 		}
 	}
-	printf("Recuerda de tienes 4 minas que evitar... que empiece el juego!!");
+	printf("Recuerda de tienes 4 minas que evitar... que empiece el juego!!\n");
 	sleep(2);
 	//Se crea aqui el tablero que vera el jugador(sin las minas)
 	for(i=0; i<8; i++)
@@ -1984,7 +1984,7 @@ void modoFacil()
 						printf("\n");
 				}
 			}
-	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!");
+	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!\n");
 	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
 		}
 		else
@@ -2002,7 +2002,7 @@ void modoFacil()
 			nIntentos++; //va sumando cada vez que el jugador rellena un hueco del tablero sin perder, cuando nIntentos=8x8-4(minas), el jugador habra ganado
 			if (nIntentos==60)
 			{
-				printf("ENHORABUENA, no has tocado ninguna mina en todo el tablero... HAS GANADO LA PARTIDA");
+				printf("ENHORABUENA, no has tocado ninguna mina en todo el tablero... HAS GANADO LA PARTIDA\n");
 			}
 			else
 			{
@@ -2039,7 +2039,7 @@ void modoDificil()
 					printf("\n");
 		}
 	}
-	printf("Recuerda de tienes 6 minas que evitar... que empiece el juego!!");
+	printf("Recuerda de tienes 6 minas que evitar... que empiece el juego!!\n");
 	sleep(2);
 	//Se crea aqui el tablero que vera el jugador(sin las minas)
 	for(i=0; i<10; i++)
@@ -2114,7 +2114,7 @@ void modoDificil()
 						printf("\n");
 				}
 			}
-	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!");
+	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!\n");
 	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
 		}
 		else
@@ -2132,7 +2132,7 @@ void modoDificil()
 			nIntentos++; //va sumando cada vez que el jugador rellena un hueco del tablero sin perder, cuando nIntentos=8x8-4(minas), el jugador habra ganado
 			if (nIntentos==94)
 			{
-				printf("ENHORABUENA, no has tocado ninguna mina en todo el tablero... HAS GANADO LA PARTIDA");
+				printf("ENHORABUENA, no has tocado ninguna mina en todo el tablero... HAS GANADO LA PARTIDA\n");
 			}
 			else
 			{
