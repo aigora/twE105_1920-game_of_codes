@@ -1991,7 +1991,7 @@ void modoFacil()
 						printf("\n");
 				}
 			}
-	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!\n");
+	    	printf("Que pena, has encontrado una mina(en el tablero puedes ver donde estaba cada mina)... has perdido. Hasta pronto!!\n");
 	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
 		}
 		else
@@ -2142,7 +2142,7 @@ void modoDificil()
 						printf("\n");
 				}
 			}
-	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!\n");
+	    	printf("Que pena, has encontrado una mina(en el tablero puedes ver donde estaba cada mina)... has perdido. Hasta pronto!!\n");
 	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
 		}
 		else
