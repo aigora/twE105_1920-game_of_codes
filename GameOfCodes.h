@@ -1,4 +1,4 @@
-//PRESENTACIÓN
+//PRESENTACION
 typedef struct{
 	char nombre[10];
 	char apellidos[20];
@@ -86,3 +86,9 @@ void historia_q7(); //Muestra la septima pregunta
 void historia_q8(); //Muestra la octava pregunta
 void historia_q9(); //Muestra la novena pregunta
 void historia_q10(); //Muestra la decima pregunta
+
+//BUSCAMINAS
+void Buscaminas();
+void modoFacil(); //presenta tablero de 8x8 y 4 minas
+void modoDificil(); //presentatablero de 10x10 y 6 minas
+void modoextremo(); //Presenta tablero de 12x12 y 8 minas

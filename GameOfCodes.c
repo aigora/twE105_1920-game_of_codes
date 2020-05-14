@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 #define Max_Usuarios 4 //Maximo numero de usuarios que pueden registrarse
-#define intentos 2 //Numero de intentos para adivina el numero
+#define intentos 2 //Numero de intentos para adivinar el numero
 
 //PRESENTACION
 void presentacion()
@@ -1842,3 +1842,10 @@ void historia_q10()
 	printf ("\n");
 	fclose(q10);
 }
+
+//BUSCAMINAS
+void Buscaminas();
+{
+	
+}
+

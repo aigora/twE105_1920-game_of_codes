@@ -17,7 +17,7 @@ int main ()
 				\n 2) Adivina el numero.\
 				\n 3) Heroes.\
 				\n 4) Preguntados.\
-				\n 5) Ahorcado.\
+				\n 5) Buscaminas.\
 				\n Otro) Salir del programa.\n ");
 		scanf ("%i", &a);
 		
@@ -39,7 +39,7 @@ int main ()
 				Preguntados();
 				break;
 			case 5:
-				printf("Juego ahorcado\n"); //Ahorcado(); Juego del ahorcado por implementar
+				Buscaminas(); 
 			break;
 				
 			default:
