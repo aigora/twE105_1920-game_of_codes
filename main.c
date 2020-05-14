@@ -39,7 +39,7 @@ int main ()
 				Preguntados();
 				break;
 			case 5:
-				Buscaminas(); 
+				buscaminas(); 
 			break;
 				
 			default:

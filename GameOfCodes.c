@@ -1844,7 +1844,7 @@ void historia_q10()
 }
 
 //BUSCAMINAS
-void Buscaminas();
+void buscaminas()
 {
 	char e;
 	printf("Hola!!, preparado para jugar al Buscaminas?\n");
@@ -1867,8 +1867,8 @@ void Buscaminas();
 			modoDificil();
 		break;
 		
-		case 'D':
-		case 'd':
+		case 'E':
+		case 'e':
 			modoExtremo();
 		break;
 	}
@@ -1881,13 +1881,14 @@ void modoFacil()
 	int v1[2], v2[2], v3[2], v4[2];
 	int x1, y1, x2, y2, x3, y3, x4, y4, x5, y5;
 	int tablero[8][8]; //tablero de minas
-	int tJug[8][8]; //tablro que ve el jugador
+	int tJug[8][8]; //tablero que ve el jugador
 	int jx, jy; //variables que recogen la posicion donde se mueve el jugador
 	int result;
 	char m; //identifica minas
 	int nIntentos=0; //contabiliza los intentos
 	
 	printf("Has elegido modo facil, por lo que tu tablero(8x8)es este:...\n");
+	
 	//Este bucle permite crear el tablero inicial(8x8)
 	for(i=0; i<8; i++)
 	{
@@ -1900,11 +1901,11 @@ void modoFacil()
 		}
 	}
 	printf("Recuerda de tienes 4 minas que evitar... que empiece el juego!!");
-	
+	sleep(2);
 	//Se crea aqui el tablero que vera el jugador(sin las minas)
-	for(i=0; i<N; i++)
+	for(i=0; i<8; i++)
 	{
-		for(j=0; j<N; j++)
+		for(j=0; j<8; j++)
 		{
 			tJug[i][j]=0;
 		}
@@ -1942,7 +1943,7 @@ void modoFacil()
     //x4 = rand()%8;
     //y4 = rand()%8;
     
-    tablero[v1[0]][v1[1]] = 9; //Se inicia un 'flag'
+    tablero[v1[0]][v1[1]] = 9; //Se inicializa un 'flag' para las minas
     tablero[v2[0]][v2[1]] = 9;
     tablero[v3[0]][v3[1]] = 9;
     tablero[v4[0]][v4[1]] = 9;
@@ -1979,9 +1980,9 @@ void modoFacil()
 		//Se comprueba si el punto introducido por el jugador coincide con una mina
 	    if(( (jx==v1[0]) && (jy==v1[1]) || (jx==v2[0]) && (jy==v2[1]) || (jx==v3[0]) && (jy==v3[1]) || (jx==v4[0]) && (jy==v4[1]) ))
 	    {
-	    	for(i=0; i<N; i++) //dibuja el tablero, con las minas
+	    	for(i=0; i<8; i++) //dibuja el tablero, con las minas
 	    	{
-		    	for(j=0; j<N; j++)
+		    	for(j=0; j<8; j++)
 		    	{
 		    		printf("%i ", tablero[i][j]);
 		    		if(j==7)
@@ -1994,9 +1995,9 @@ void modoFacil()
 		else
 		{
 			tJug[jx][jy] = 1;
-			for(i=0; i<N; i++) //dibuja el tablero, sin las minas
+			for(i=0; i<8; i++) //dibuja el tablero, sin las minas
 	    	{
-		    	for(j=0; j<N; j++)
+		    	for(j=0; j<8; j++)
 		    	{
 		    		printf("%i ", tJug[i][j]);
 		    		if(j==7)
@@ -2005,6 +2006,136 @@ void modoFacil()
 			}
 			nIntentos++; //va sumando cada vez que el jugador rellena un hueco del tablero sin perder, cuando nIntentos=8x8-4(minas), el jugador habra ganado
 			if (nIntentos==60)
+			{
+				printf("ENHORABUENA, no has tocado ninguna mina en todo el tablero... HAS GANADO LA PARTIDA");
+			}
+			else
+			{
+				printf("\nBien!, no has tocado ninguna mina, sigues jugando\n");
+				printf("Introduce las coordenadas de una nueva posicion en el tablero(entre 0 y 7)\n");	
+			}
+		}
+	}while(result!='m');	   
+}
+
+void modoDificil()
+{
+	int i, j;
+	int t;
+	int v1[2], v2[2], v3[2], v4[2], v5[2], v6[2]; 
+	int x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6;
+	int tablero[10][10]; //tablero de minas
+	int tJug[10][10]; //tablro que ve el jugador
+	int jx, jy; //variables que recogen la posicion donde se mueve el jugador
+	int result;
+	char m; //identifica minas
+	int nIntentos=0; //contabiliza los intentos
+	
+	printf("Has elegido modo dificil, por lo que tu tablero(10x10)es este:...\n");
+	
+	//Este bucle permite crear el tablero inicial(10x10)
+	for(i=0; i<10; i++)
+	{
+		for(j=0; j<10; j++)
+		{
+			tablero[i][j]=0;
+			printf("/ ");
+				if(j==9)
+					printf("\n");
+		}
+	}
+	printf("Recuerda de tienes 6 minas que evitar... que empiece el juego!!");
+	sleep(2);
+	//Se crea aqui el tablero que vera el jugador(sin las minas)
+	for(i=0; i<10; i++)
+	{
+		for(j=0; j<10; j++)
+		{
+			tJug[i][j]=0;
+		}
+	}
+	//se generan numeros aleatorios para las posiciones de las minas, en vectores
+	srand(time(NULL)); //genera posiciones aleatorias para los valores 'x' e 'y' de cada mina
+	v1[0]=rand()%10;
+	v1[1]=rand()%10;
+	
+	//permite asegurarse de que las minas no esten en la misma posicion
+	//reescribe el vector v2, hasta que su componente 'x' o 'y' sea distinta a la del vector 1
+	do{
+		v2[0]=rand()%10;
+		v2[1]=rand()%10;
+	}while(v2[0]==v1[0] && v2[1]==v1[1]);
+	
+	//reescribe el vector v3, hasta que sus componente 'x' o 'y' sean distintas a las del vector 1 y 2
+	do{
+		v3[0]=rand()%10;
+		v3[1]=rand()%10;
+	}while((v3[0]==v1[0] && v3[1]==v1[1]) || (v3[0]==v2[0] && v3[1]==v2[1]));
+	
+	//reescribe el vector v4, hasta que sus componente 'x' o 'y' sean distintas a las del vector 1, 2 y 3
+	do{
+		v4[0]=rand()%10;
+		v4[1]=rand()%10;
+	}while((v4[0]==v1[0] && v4[1]==v1[1]) || (v4[0]==v2[0] && v4[1]==v2[1]) || (v4[0]==v3[0] && v4[1]==v3[1]));
+	
+	//reescribe el vector v5, hasta que sus componente 'x' o 'y' sean distintas a las del vector 1, 2, 3 y 4
+	do{
+		v5[0]=rand()%10;
+		v5[1]=rand()%10;
+	}while((v5[0]==v1[0] && v5[1]==v1[1]) || (v5[0]==v2[0] && v5[1]==v2[1]) || (v5[0]==v3[0] && v5[1]==v3[1]) || (v5[0]==v4[0] && v5[1]==v4[1]));
+	
+	//reescribe el vector v6, hasta que sus componente 'x' o 'y' sean distintas a las del vector 1, 2, 3, 4 y 5
+	do{
+		v6[0]=rand()%10;
+		v6[1]=rand()%10;
+	}while((v6[0]==v1[0] && v6[1]==v1[1]) || (v6[0]==v2[0] && v6[1]==v2[1]) || (v6[0]==v3[0] && v6[1]==v3[1]) || (v6[0]==v4[0] && v6[1]==v4[1]) || (v6[0]==v5[0] && v6[1]==v5[1]));
+	
+	//x1 = rand()%8;
+    //y1 = rand()%8; ... asi hasta 12 componentes de 6 vectores
+    
+    tablero[v1[0]][v1[1]] = 9; //Se inicializa un 'flag' para las minas
+    tablero[v2[0]][v2[1]] = 9;
+    tablero[v3[0]][v3[1]] = 9;
+    tablero[v4[0]][v4[1]] = 9;
+    tablero[v5[0]][v5[1]] = 9;
+    tablero[v6[0]][v6[1]] = 9;
+    
+    //Pedir al jugador que introduzca las coordenadas(x, y) de donde quiera caer. 'x' e 'y' estan entre 0 y 7
+	printf("Introduce las coordenadas 'x' e 'y' del lugar del tablero donde quieras caer(entre 0 y 7)\n");
+	do
+	{
+		printf("\n");
+		scanf(" %i %i", &jx, &jy);
+		printf("\n");
+		//Se comprueba si el punto introducido por el jugador coincide con una mina
+	    if(( (jx==v1[0]) && (jy==v1[1]) || (jx==v2[0]) && (jy==v2[1]) || (jx==v3[0]) && (jy==v3[1]) || (jx==v4[0]) && (jy==v4[1]) || (jx==v5[0]) && (jy==v5[1]) || (jx==v6[0]) && (jy==v6[1])))
+	    {
+	    	for(i=0; i<10; i++) //dibuja el tablero, con las minas
+	    	{
+		    	for(j=0; j<10; j++)
+		    	{
+		    		printf("%i ", tablero[i][j]);
+		    		if(j==7)
+						printf("\n");
+				}
+			}
+	    	printf("Que pena, has encontrado una mina... has perdido. Hasta pronto!!");
+	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
+		}
+		else
+		{
+			tJug[jx][jy] = 1;
+			for(i=0; i<10; i++) //dibuja el tablero, sin las minas
+	    	{
+		    	for(j=0; j<10; j++)
+		    	{
+		    		printf("%i ", tJug[i][j]);
+		    		if(j==7)
+						printf("\n");
+				}
+			}
+			nIntentos++; //va sumando cada vez que el jugador rellena un hueco del tablero sin perder, cuando nIntentos=8x8-4(minas), el jugador habra ganado
+			if (nIntentos==94)
 			{
 				printf("ENHORABUENA, no has tocado ninguna mina en todo el tablero... HAS GANADO LA PARTIDA");
 			}
