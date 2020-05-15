@@ -32,7 +32,7 @@ void presentacion()
 		scanf ("%s", usuario[i]->nombre);
 		fprintf (u, "Nombre del usuario %i: %s\n", i+1, usuario[i]->nombre);
 		
-		printf ("Introduzca los apeliidos del usuario %i:  ", i+1);
+		printf ("Introduzca los apellidos del usuario %i:  ", i+1);
 		fflush(stdout);
 		scanf (" %[^\n]", usuario[i]->apellidos);
 		fprintf (u, "Apellidos del usuario %i: %s\n", i+1, usuario[i]->apellidos);
@@ -299,7 +299,7 @@ void casilla_ocupada (char c[3][3], char aux, char signo)
 	c[i][j] = signo;
 }
 
-void maquina (char c[3][3]) //el ordenador marcará casillas de forma aleatoria
+void maquina (char c[3][3]) //el ordenador marcarÃ¡ casillas de forma aleatoria
 {
 	int i,j,k;
 	char aux;
@@ -1992,7 +1992,7 @@ void modoFacil()
 				}
 			}
 	    	printf("Que pena, has encontrado una mina(en el tablero puedes ver donde estaba cada mina)... has perdido. Hasta pronto!!\n");
-	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habr� perdido
+	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
 		}
 		else
 		{
@@ -2143,7 +2143,7 @@ void modoDificil()
 				}
 			}
 	    	printf("Que pena, has encontrado una mina(en el tablero puedes ver donde estaba cada mina)... has perdido. Hasta pronto!!\n");
-	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habr� perdido
+	    	result='m';//si coincide, result lo almacena como 'm'. cuando result = 'm', el jugador habrá perdido
 		}
 		else
 		{
