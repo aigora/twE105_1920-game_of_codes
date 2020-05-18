@@ -1,4 +1,0 @@
-Pregunta 8: El teorema que dice que "en todo triangulo rectangulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos" es el de:
-1) Arquimedes
-2) Pitagoras
-3) Gauss
