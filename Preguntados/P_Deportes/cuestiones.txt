@@ -1,0 +1,10 @@
+Pregunta 1: Que jugador de futbol ha ganado mas copas del mundo?
+Pregunta 2: Que jugador de la NBA ha ganado mas campeonatos en la historia?
+Pregunta 3: En que campeonato de tenis se presencio el partido mas largo de la historia?
+Pregunta 4: Quien fue el boxeador mas joven de la historia en conseguir un titulo mundial de los pesos pesados?
+Pregunta 5: Quien es el deportista con mas medallas olimpicas de la historia?
+Pregunta 6: Quien es el piloto de formula 1 con mas titulos mundiales?
+Pregunta 7: De las siguientes selecciones de futbol masculino, cual de ellas nunca ha ido a una copa del mundo?
+Pregunta 8: Quien tiene el record en los 100 metros planos?
+Pregunta 9: Quien es el golfista con mas torneos?
+Pregunta 10: Que seleccion de futbol masculino gano la cupa del mundo en 2010?

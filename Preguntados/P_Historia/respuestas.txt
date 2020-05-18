@@ -1,0 +1,10 @@
+1)1969  2)2000  3)1835
+1)Lima  2)Machu Picchu  3)Cuzco
+1)Siglo XVI  2)Siglo XXI  3)Siglo V
+1)1500  2)2009  3)1812
+1)Neron  2)Cesar Augusto  3)Julio Cesar
+1)Por decir que la tierra era plana  2)Por negar la existencia de Dios  3)Por decir que la Tierra giraba alrededor del Sol
+1)Akenaton  2)Tutankamon  3)Ramses II
+1)Stalingrado  2)Lenningrado  3)Petroburgo
+1)La guerra de los 100 anhos  2)La batalla de Las Navas de Tolosa  3)Primera Cruzada
+1)Felipe III  2)Felipe IV  3)Carlos III
