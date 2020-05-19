@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #define Max_Usuarios 4 //Maximo numero de usuarios que pueden registrarse
 #define intentos 2 //Numero de intentos para adivinar el numero
-#define Num 10 //Numero de cadenas
+#define Num 10 //Numero de cadenas dentro del vector
 #define MaxNum_Caracteres 250 //Maximo numero de caracteres en una cadena
 
 //PRESENTACION
